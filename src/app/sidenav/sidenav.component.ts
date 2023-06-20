@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { navbarData } from './nav-data';
 
 @Component({
@@ -8,6 +8,7 @@ import { navbarData } from './nav-data';
 })
 export class SidenavComponent {
 
+  @Output() onToggleSideNav: EventEmitter<> = new EventEmitter;
   collapsed = false;
   navData = navbarData;
 
