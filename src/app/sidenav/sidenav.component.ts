@@ -8,7 +8,7 @@ import { navbarData } from './nav-data';
 })
 export class SidenavComponent {
 
-  collapsed = true;
+  collapsed = false;
   navData = navbarData;
 
     // SIDEBAR NAVIGATION CLOSING METHOD
