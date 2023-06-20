@@ -10,4 +10,8 @@ export class SidenavComponent {
 
   collapsed = true;
   navData = navbarData;
+
+  closeSidenav() {
+    
+  }
 }
