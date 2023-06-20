@@ -27,5 +27,6 @@ export class SidenavComponent {
   // SIDEBAR TOGGLE COLLAPSING  METHOD
   toggleCollapse(): void {
     this.collapsed = !this.collapsed;
+    this.onToggleSideNav.emit({ collapsed: this.collapsed, screenWidth: this.screenWidth });
   }
 }
