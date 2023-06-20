@@ -13,11 +13,11 @@ export class SidenavComponent {
 
     // SIDEBAR NAVIGATION CLOSING METHOD
   closeSidenav(): void {
-
+    this.collapsed = false;
   }
 
   // SIDEBAR TOGGLE COLLAPSING  METHOD
   toggleCollapse(): void {
-
+    this.collapsed = !this.collapsed;
   }
 }
