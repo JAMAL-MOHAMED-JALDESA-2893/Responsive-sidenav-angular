@@ -11,7 +11,13 @@ export class SidenavComponent {
   collapsed = true;
   navData = navbarData;
 
-  closeSidenav() {
-    
+    // SIDEBAR NAVIGATION CLOSING METHOD
+  closeSidenav(): void {
+
+  }
+
+  // SIDEBAR TOGGLE COLLAPSING  METHOD
+  toggleCollapse(): void {
+
   }
 }
