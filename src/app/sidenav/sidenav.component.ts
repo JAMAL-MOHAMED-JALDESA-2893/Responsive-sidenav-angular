@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { navbarData } from './nav-data';
 
-
+//INTERFACE
 interface SideNavToggle{
-
+  screenWidth: number;
+  collapsed: boolean;
 }
 @Component({
   selector: 'app-sidenav',
@@ -14,6 +15,7 @@ interface SideNavToggle{
 export class SidenavComponent {
 
   @Output() onToggleSideNav: EventEmitter<SideNavToggle> = new EventEmitter();
+  screenWidth = 0;
   collapsed = false;
   navData = navbarData;
 
