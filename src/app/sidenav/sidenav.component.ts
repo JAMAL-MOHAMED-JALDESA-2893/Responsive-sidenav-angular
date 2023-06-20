@@ -22,6 +22,7 @@ export class SidenavComponent {
     // SIDEBAR NAVIGATION CLOSING METHOD
   closeSidenav(): void {
     this.collapsed = false;
+    this.onToggleSideNav.emit({ collapsed: this.collapsed, screenWidth: this.screenWidth });
   }
 
   // SIDEBAR TOGGLE COLLAPSING  METHOD
