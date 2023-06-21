@@ -17,7 +17,6 @@ export class BodyComponent {
     } else if (this.collapsed && this.screenWidth <= 768 && this.screenWidth > 0) {
       styleClass = 'body-md-screen';
     }
-
     return styleClass;
   }
 
